@@ -34,8 +34,8 @@ npm run build    # static site in dist/
 
 ## Deploy
 
-The live site is served from the `gh-pages` branch (built `dist/`, pushed by `npm run deploy`).
-To enable it once: repo **Settings → Pages → Source: Deploy from a branch → `gh-pages` / root**.
+The live site is served by GitHub Pages from the `gh-pages` branch (built `dist/`, pushed by `npm run deploy`).
+Pages was enabled automatically when that branch was first pushed; the source is visible under **Settings → Pages**.
 
 Optional: `deploy/github-pages.yml` is a ready GitHub Actions workflow that builds and deploys on every push to `main`.
 Move it to `.github/workflows/` with a token that has the `workflow` scope, and Pages switches to the Actions source automatically.
